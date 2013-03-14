@@ -24,7 +24,9 @@ $(document).ready(function(){
     $(".goal").text(data.goal);
     $(".current").text(data.current);
 
-    if (data.current < data.goal){
+    // todo: create an object up front that calls parseInt on numbers 
+    // and creates attributes on the object
+    if ( parseInt(data.current) < parseInt(data.goal) ){
       $(".remaining").text(remaining);
     } else {
       $(".please-join").html("We've reached our goal, but you can still join!")
