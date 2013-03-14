@@ -1,0 +1,21 @@
+{
+  "name": "crosscut-drive-progress",
+  "version": "0.0.1",
+  "author": "Seth Vincent <sethvincent@gmail.com>",
+  "description": "track progress toward a goal based on values in a google spreadsheet.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sethvincent/crosscut-drive-progress.git"
+  },
+  "devDependencies": {
+    "grunt": "0.4.0",
+    "grunt-contrib-qunit": "0.2.0",
+    "grunt-contrib-connect": "0.1.2",
+    "grunt-contrib-livereload": "0.1.2",
+    "grunt-regarde": "~0.1.1"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.8"
+  }
+}

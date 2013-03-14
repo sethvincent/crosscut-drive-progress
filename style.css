@@ -1,0 +1,108 @@
+html,
+body,
+input,
+button,
+select,
+textarea {
+  font: 15px/25px "Helvetica Neue", Helvetica, arial, sans-serif;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-weight: 300;
+}
+
+body {
+  margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  margin-top: 0px;
+}
+
+a {
+  color: #E187B8;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #7E2054;
+}
+
+p {
+  margin: 12px 0px;
+}
+
+#app {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+#thermometer {
+  display: none;
+}
+
+.graph {
+  float: left;
+  margin-top: 13px;
+  margin-right: 25px;
+}
+
+.graph rect {
+  fill: #FF4405;
+}
+
+.goalp {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 3px;
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 1.1em;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+h2.description {
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+p.status {
+  font-size: 18px;
+}
+
+.percentage {
+  font-weight: bold;
+}
+
+.please-join {
+  margin-bottom: 24px;
+}
+
+a.action {
+  color: #fff;
+  background-color: #42D0FF;
+  padding: 10px 15px 12px 15px;
+}
+
+a.action:hover {
+-webkit-box-shadow: inset 0px 0px 3px 1px rgba(100, 100, 100, 0.1);
+        box-shadow: inset 0px 0px 3px 1px rgba(100, 100, 100, 0.1);
+}
+
+a.action:active {
+-webkit-box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
