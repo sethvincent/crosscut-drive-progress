@@ -53,14 +53,24 @@ $(document).ready(function(){
       .domain([0, chartSize])
       .range(["red", "green"]);
 
-    chart.selectAll("rect")
+    var outline = chart.selectAll("rect")
+      .data([data.current])
+    .enter().append("rect")
+      .attr("x", 30)
+      .attr("y", 0)
+      .attr("width", 50)
+      .attr("height", chartSize)
+      .style("stroke", "#e9e9e9")
+      .style("fill", "rgba(255, 255, 255, 0)");
+
+    outline.select("rect")
       .data([data.current])
     .enter().append("rect")
       .attr("x", 30)
       .attr("y", function() { return chartSize - current; })
       .attr("width", 50)
-      .attr("height", function() { return current; });
-
+      .attr("height", function() { return current; })
+      .style("fill", "#FF4405");
 
     chart.selectAll("line")
       .data(y.ticks(18))
@@ -76,9 +86,9 @@ $(document).ready(function(){
       .data(y.ticks(10))
     .enter().append("text")
       .attr("class", "rule")
-      .attr("x", 24)
+      .attr("x", 25)
       .attr("y", y)
-      .attr("height", 3)
+      .attr("height", 0)
       .attr("text-anchor", "end")
       .attr("font-family", "sans-serif")
       .attr("font-size", "10px")

@@ -53,9 +53,9 @@ p {
   margin-right: 25px;
 }
 
-.graph rect {
+/*.graph rect {
   fill: #FF4405;
-}
+}*/
 
 .goalp {
   text-transform: uppercase;
